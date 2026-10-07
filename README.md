@@ -1,5 +1,32 @@
-# 💫 About Me:
-# Hi, I'm kolemm14 👋<br><br>Student developer from Senegal, focused on **Linux, web development, open-source projects and software experimentation**.<br><br>I like building practical tools, customizing Linux environments, and learning by creating real projects from scratch.<br><br>## 🚀 What I'm working on<br><br>* 🐧 **Debian Hyprland Custom** — a customizable Hyprland environment and installer for Debian<br>* 🎓 **ClasseXP** — a web platform for teachers and students<br>* 📱 **MirrorBridge** — Linux screen mirroring for Android and iPhone<br>* ♻️ **RePhone Lab** — experiments for reusing old smartphones with Linux<br>* 🎬 **FX Pro / Ease Pro** — tools and effects for Adobe After Effects<br><br>## 🛠 Goals<br><br>My goal is to become a strong software developer capable of building complete applications, from the user interface to the backend and system architecture.<br><br>I'm especially interested in:<br><br>* Linux<br>* open source<br>* web applications<br>* desktop applications<br>* developer tools<br>* automation<br>* system integration<br><br>## 🤝 Open to collaboration<br><br>I'm interested in collaborating on:<br><br>* Linux projects<br>* open-source applications<br>* web platforms<br>* developer tools<br>* experimental software<br><br>## 📫 Contact<br><br>GitHub: **@kolemm14**<br><br>More links coming soon.<br>
+# Hi, I'm Kolemm14 👋
+
+Student developer from Senegal 🇸🇳 focused on **Linux, open source, web development and system tools**.
+
+I learn by building real projects and improving them step by step.
+
+## 🚀 Projects
+
+- 🐧 **Debian Hyprland Custom** — customizable Debian + Hyprland environment and installer
+- 🎓 **ClasseXP** — web platform for teachers and students
+- 📱 **MirrorBridge** — screen mirroring and device integration for Linux
+- ♻️ **RePhone Lab** — experiments to reuse old smartphones
+- 🎬 **FX Pro / Ease Pro** — productivity tools for Adobe After Effects
+
+## 🛠 Skills
+
+**Python • C • JavaScript • Flask • HTML/CSS • Git • Linux • SQL**
+
+## 🌱 Currently Learning
+
+Software architecture, backend development, Linux internals, security and performance optimization.
+
+## 🤝 Open to
+
+Open-source contributions, Linux projects, web applications and developer tools.
+
+## 📫 Contact
+
+GitHub: **[@kolemm14](https://github.com/kolemm14)**
 
 
 ## 🌐 Socials:
