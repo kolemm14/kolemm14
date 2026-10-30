@@ -49,7 +49,7 @@ def get_repositories():
 
     return [
         repo for repo in repositories
-        if not repo.get("fork", False) and not repo.get("archived", False)
+        if not repo.get("fork", False)\n        and not repo.get("archived", False)\n        and repo.get("name", "").lower() != USERNAME.lower()
     ]
 
 
