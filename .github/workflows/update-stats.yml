@@ -1,5 +1,5 @@
 
-name: Update GitHub Profile Statistics
+name: Update GitHub Profile
 
 on:
   workflow_dispatch:
@@ -14,32 +14,32 @@ permissions:
 
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
-      - name: Generate statistics
+      - name: Generate profile data
         env:
           GITHUB_USERNAME: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate.py
 
-      - name: Save generated graphics
+      - name: Commit updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add assets/*.svg
+          git add data/
 
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update profile statistics"
+            git commit -m "chore: update profile data"
             git push
           else
             echo "No changes detected."
