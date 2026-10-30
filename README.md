@@ -44,16 +44,15 @@ I enjoy learning by building real projects, exploring how technology works and t
 - Cybersecurity fundamentals
 - Rust and TypeScript
 
-### GitHub Activity
+<h3>GitHub Activity</h3>
 
 <p align="center">
   <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=kolemm14&bg_color=0D1117&color=D0D0D0&title_color=E34B4B&line=E34B4B&point=FFFFFF&area=true&area_color=E34B4B&hide_border=true&custom_title=GitHub%20Activity"
+    src="https://TON-DOMAINE.vercel.app](https://github-readme-activity-graph-phi-livid.vercel.app/)/graph?username=kolemm14&bg_color=0D1117&color=D0D0D0&line=E34B4B&point=FFFFFF&area=true&hide_border=true"
     width="95%"
-    alt="Kolemm14 GitHub Activity Graph"
+    alt="KOLEMM14 GitHub Activity"
   />
 </p>
-
 ### Connect
 
 <p align="center">
