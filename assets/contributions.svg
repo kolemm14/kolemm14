@@ -2200,13 +2200,13 @@
 
 <rect x="800" y="175" width="11"
       height="11" rx="2"
-      fill="#a00000">
-<title>2026-10-30: 13 contributions</title>
+      fill="#d50000">
+<title>2026-10-30: 15 contributions</title>
 </rect>
 
 <text x="35" y="180" fill="#ff5252"
       font-size="14" font-family="Arial">
-      78 contributions in the selected year
+      80 contributions in the selected year
 </text>
 
 </svg>
