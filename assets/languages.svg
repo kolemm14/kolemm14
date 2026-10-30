@@ -1,0 +1,79 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900" height="300"
+     viewBox="0 0 900 300">
+<defs>
+  <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ff1744"/>
+    <stop offset="50%" stop-color="#d50000"/>
+    <stop offset="100%" stop-color="#6a0000"/>
+  </linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#151515"/>
+    <stop offset="100%" stop-color="#090909"/>
+  </linearGradient>
+</defs>
+<rect width="100%" height="100%" rx="18" fill="url(#bg)"/>
+<rect x="0" y="0" width="5" height="100%"
+      rx="2" fill="url(#red)"/>
+<text x="35" y="48" fill="#ffffff"
+      font-size="23" font-weight="bold"
+      font-family="Arial">LANGUAGE DISTRIBUTION</text>
+
+<rect x="35" y="95" width="687.40"
+      height="17" fill="#ff1744"/>
+<text x="35" y="137" fill="#eeeeee"
+      font-size="14" font-family="Arial">
+      Rust — 83.8%
+</text>
+
+<rect x="722.4041194894722" y="95" width="49.60"
+      height="17" fill="#d50000"/>
+<text x="722.4041194894722" y="137" fill="#eeeeee"
+      font-size="14" font-family="Arial">
+      Python — 6.0%
+</text>
+
+<rect x="771.9998562341219" y="95" width="44.40"
+      height="17" fill="#ff5252"/>
+<text x="771.9998562341219" y="137" fill="#eeeeee"
+      font-size="14" font-family="Arial">
+      JavaScript — 5.4%
+</text>
+
+<rect x="816.3972247449942" y="95" width="19.14"
+      height="17" fill="#9b0000"/>
+<text x="816.3972247449942" y="137" fill="#eeeeee"
+      font-size="14" font-family="Arial">
+      WGSL — 2.3%
+</text>
+
+<rect x="835.5372198951289" y="95" width="6.94"
+      height="17" fill="#ff8a80"/>
+<text x="835.5372198951289" y="137" fill="#eeeeee"
+      font-size="14" font-family="Arial">
+      Shell — 0.8%
+</text>
+
+<rect x="842.47692294384" y="95" width="4.83"
+      height="17" fill="#b71c1c"/>
+<text x="842.47692294384" y="137" fill="#eeeeee"
+      font-size="14" font-family="Arial">
+      C — 0.6%
+</text>
+
+<rect x="847.3063610430388" y="95" width="4.06"
+      height="17" fill="#ef5350"/>
+<text x="847.3063610430388" y="137" fill="#eeeeee"
+      font-size="14" font-family="Arial">
+      HTML — 0.5%
+</text>
+
+<rect x="851.3617783227947" y="95" width="3.64"
+      height="17" fill="#650000"/>
+<text x="851.3617783227947" y="137" fill="#eeeeee"
+      font-size="14" font-family="Arial">
+      CSS — 0.4%
+</text>
+
+</svg>
