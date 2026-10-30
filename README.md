@@ -1,57 +1,164 @@
-# Hi, I'm Kolemm14 👋
+ <!-- Profile README — github.com/kolemm14 -->
 
-Student developer from Senegal 🇸🇳 focused on **Linux, open source, web development and system tools**.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:050816,50:111827,100:164E63&text=KOLEMM14&fontColor=E0F7FF&fontSize=65&fontAlignY=38&desc=BUILD%20%E2%80%A2%20CREATE%20%E2%80%A2%20INNOVATE&descAlignY=60&descSize=16&animation=twinkling&stroke=22D3EE&strokeWidth=1" width="100%" />
+</p>
 
-I learn by building real projects and improving them through testing, experimentation and open-source development.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1000&color=22D3EE&center=true&vCenter=true&width=750&lines=Student+Developer+from+Senegal+%F0%9F%87%B8%F0%9F%87%B3;Linux+%7C+Open+Source+%7C+Web+Development;Building+tools%2C+systems+and+creative+experiences;Learning+today.+Building+the+future." alt="Typing SVG" />
+</p>
 
-## 🚀 Featured Projects
-
-- 🐧 **Debian Hyprland Custom** — customizable Debian + Hyprland environment and installer
-- 🎓 **ClasseXP** — web platform for teachers and students
-- 📱 **MirrorBridge** — screen mirroring and device integration for Linux
-- ♻️ **RePhone Lab** — experiments for reusing old smartphones
-- 🎬 **FX Pro / Ease Pro** — tools for Adobe After Effects
-
-## 🛠 Tech Stack
-
-![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-121011?style=flat-square&logo=gnu-bash&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-
-## 🌱 Currently Learning
-
-**Software architecture • Linux internals • Backend development • Security • Performance optimization**
-
-## 🤝 Open to Collaboration
-
-Open-source projects, Linux tools, web applications and developer utilities.
-
-## 🌐 Connect With Me
-
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/kolemm14_dev/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mouhamet-kebe-203595430/)
-[![TikTok](https://img.shields.io/badge/TikTok-000000?logo=tiktok&logoColor=white)](https://www.tiktok.com/@kolemm14_labs)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@Kolemm14)
-[![Mastodon](https://img.shields.io/badge/Mastodon-6364FF?logo=mastodon&logoColor=white)](https://mastodon.social/@Kolemm14)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:mouhametkebe271@gmail.com)
-
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.shion.dev/api?username=kolemm14&theme=dark&hide_border=true)
-
-![Top Languages](https://github-readme-stats.shion.dev/api/top-langs/?username=kolemm14&theme=dark&hide_border=true&layout=compact)
-
-## 🏆 GitHub Trophies
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=kolemm14&theme=darkhub&no-frame=true&margin-w=8)
+<p align="center">
+  <a href="https://github.com/kolemm14">
+    <img src="https://img.shields.io/badge/GitHub-Kolemm14-0D1117?style=for-the-badge&logo=github&logoColor=22D3EE" />
+  </a>
+  <img src="https://img.shields.io/badge/FOCUS-LINUX-0D1117?style=for-the-badge&logo=linux&logoColor=22D3EE" />
+  <img src="https://img.shields.io/badge/STATUS-BUILDING-0D1117?style=for-the-badge&logo=codefactor&logoColor=A78BFA" />
+</p>
 
 ---
 
-![Profile Views](https://komarev.com/ghpvc/?username=kolemm14&color=grey&style=flat-square)
+## `01 / ABOUT ME`
+
+```yaml
+name: Kolemm14
+location: Senegal 🇸🇳
+role: Student Developer
+interests:
+  - Linux & Open Source
+  - Web Development
+  - System Engineering
+  - Software Architecture
+  - Creative Development
+
+mindset: Learn by building.
+mission: Create useful technology and open-source tools.
+```
+
+I'm a student developer from Senegal passionate about technology, Linux and open-source software.
+
+I enjoy understanding how systems work, experimenting with new technologies and turning ideas into practical projects.
+
+My goal is to build software that is useful, accessible, customizable and well engineered.
+
+## `02 / FEATURED PROJECTS`
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🐧 Debian Hyprland Custom</h3>
+      A customizable Debian environment powered by Hyprland, with a focus on desktop customization, automation and installation.
+      <br/><br/>
+      <b>Focus:</b> Linux · Hyprland · Bash
+    </td>
+    <td width="50%">
+      <h3>🎓 ClasseXP</h3>
+      An educational web platform designed to connect teachers and students through useful digital tools.
+      <br/><br/>
+      <b>Focus:</b> Web Development · Backend · Education
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>📱 MirrorBridge</h3>
+      Experiments around screen mirroring and device integration for Linux.
+      <br/><br/>
+      <b>Focus:</b> Linux · Python · Device Integration
+    </td>
+    <td width="50%">
+      <h3>♻️ RePhone Lab</h3>
+      Exploring ways to give old smartphones a second life through Linux, servers and alternative uses.
+      <br/><br/>
+      <b>Focus:</b> Android · Linux · Self-hosting
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <h3>🎬 FX Pro / Ease Pro</h3>
+      Creative tools and experiments inspired by professional motion graphics workflows and Adobe After Effects.
+      <br/><br/>
+      <b>Focus:</b> Creative Software · Effects · UI Development
+    </td>
+  </tr>
+</table>
+
+## `03 / TECHNOLOGY STACK`
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,c,js,html,css,bash,linux,git,github,flask&theme=dark" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=22D3EE" />
+  <img src="https://img.shields.io/badge/C-0D1117?style=flat-square&logo=c&logoColor=22D3EE" />
+  <img src="https://img.shields.io/badge/JavaScript-0D1117?style=flat-square&logo=javascript&logoColor=F7DF1E" />
+  <img src="https://img.shields.io/badge/Bash-0D1117?style=flat-square&logo=gnubash&logoColor=22D3EE" />
+  <img src="https://img.shields.io/badge/Linux-0D1117?style=flat-square&logo=linux&logoColor=FCC624" />
+</p>
+
+## `04 / CURRENTLY EXPLORING`
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=rust,ts,postgres,docker,git&theme=dark" />
+</p>
+
+- Software architecture and clean code
+- Linux internals and system administration
+- Backend development and REST APIs
+- Cybersecurity fundamentals
+- Performance optimization
+- Rust and TypeScript
+
+## `05 / GITHUB ANALYTICS`
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=kolemm14&show_icons=true&hide_border=true&bg_color=0D1117&title_color=22D3EE&icon_color=A78BFA&text_color=C9D1D9&rank_icon=github" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kolemm14&layout=compact&hide_border=true&bg_color=0D1117&title_color=22D3EE&text_color=C9D1D9" />
+</p>
+
+<p align="center">
+  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=kolemm14&bg_color=0D1117&color=22D3EE&line=A78BFA&point=FFFFFF&area=true&hide_border=true" />
+</p>
+
+## `06 / ACHIEVEMENTS`
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=kolemm14&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&column=6" width="100%" />
+</p>
+
+## `07 / CONNECT WITH ME`
+
+<p align="center">
+  <a href="https://www.instagram.com/kolemm14_dev/">
+    <img src="https://img.shields.io/badge/Instagram-0D1117?style=for-the-badge&logo=instagram&logoColor=E4405F" />
+  </a>
+  <a href="https://www.linkedin.com/in/mouhamet-kebe-203595430/">
+    <img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2" />
+  </a>
+  <a href="https://www.tiktok.com/@kolemm14_labs">
+    <img src="https://img.shields.io/badge/TikTok-0D1117?style=for-the-badge&logo=tiktok&logoColor=FFFFFF" />
+  </a>
+  <a href="https://www.youtube.com/@Kolemm14">
+    <img src="https://img.shields.io/badge/YouTube-0D1117?style=for-the-badge&logo=youtube&logoColor=FF0000" />
+  </a>
+  <a href="https://mastodon.social/@Kolemm14">
+    <img src="https://img.shields.io/badge/Mastodon-0D1117?style=for-the-badge&logo=mastodon&logoColor=6364FF" />
+  </a>
+  <a href="mailto:mouhametkebe271@gmail.com">
+    <img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <i>"The best way to predict the future is to build it."</i>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:164E63,50:111827,100:050816&height=120&section=footer&animation=twinkling" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=kolemm14&color=22D3EE&style=for-the-badge&label=PROFILE+VISITS" />
+</p>
