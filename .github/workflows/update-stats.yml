@@ -1,16 +1,16 @@
-
 name: Update GitHub Profile
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
   schedule:
     - cron: "23 */6 * * *"
 
 permissions:
   contents: write
+
+concurrency:
+  group: profile-readme-update
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -25,23 +25,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate profile data
+      - name: Update text statistics
         env:
           GITHUB_USERNAME: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate.py
 
-     
-      - name: Commit updates
+      - name: Commit README if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+actions@users.noreply.github.com"
-
-          git add -A
+          git add README.md
 
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update profile data"
+            git commit -m "chore: update profile statistics"
             git push
           else
-            echo "No changes detected."
+            echo "No README changes detected."
           fi
