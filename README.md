@@ -47,8 +47,11 @@ I enjoy learning by building real projects, exploring how technology works and t
 ### GitHub Activity
 
 <p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=kolemm14&show_icons=true&hide_border=true&bg_color=0D1117&title_color=22D3EE&icon_color=22D3EE&text_color=C9D1D9" />
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kolemm14&layout=compact&hide_border=true&bg_color=0D1117&title_color=22D3EE&text_color=C9D1D9" />
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=kolemm14&bg_color=0D1117&color=D0D0D0&title_color=E34B4B&line=E34B4B&point=FFFFFF&area=true&area_color=E34B4B&hide_border=true&custom_title=GitHub%20Activity"
+    width="95%"
+    alt="Kolemm14 GitHub Activity Graph"
+  />
 </p>
 
 ### Connect
