@@ -171,7 +171,7 @@ def write_repository_chart(repositories, history):
             parts.append('<text x="380" y="250" text-anchor="middle" fill="#777777" font-family="Arial,sans-serif" font-size="10">The curve will become meaningful as daily snapshots accumulate.</text>')
     parts.append("</svg>")
     with open(os.path.join(ASSETS_DIR, "repository-stats.svg"), "w", encoding="utf-8", newline="\n") as file:
-        file.write("\\n".join(parts))
+        file.write("\n".join(parts))
 
 def build_markdown(profile, repositories, languages):
     stars = sum(repo.get("stargazers_count", 0) for repo in repositories)
