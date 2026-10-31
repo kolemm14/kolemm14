@@ -105,42 +105,73 @@ def write_language_chart(languages):
         file.write("\n".join(parts))
 
 
-def write_repository_chart(repositories):
+def record_star_history(repositories):
+    """Persist a daily snapshot so the chart can show real change over time."""
+    history_dir = os.path.join(ROOT, "data")
+    history_path = os.path.join(history_dir, "star-history.json")
+    os.makedirs(history_dir, exist_ok=True)
+
+    try:
+        with open(history_path, "r", encoding="utf-8") as file:
+            history = json.load(file)
+        if not isinstance(history, list):
+            history = []
+    except (FileNotFoundError, json.JSONDecodeError):
+        history = []
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    stars = sum(repo.get("stargazers_count", 0) for repo in repositories)
+    if history and history[-1].get("date") == today:
+        history[-1]["stars"] = stars
+    else:
+        history.append({"date": today, "stars": stars})
+
+    # Keep one year of daily observations for a compact, useful chart.
+    history = history[-365:]
+    with open(history_path, "w", encoding="utf-8", newline="\\n") as file:
+        json.dump(history, file, indent=2)
+        file.write("\\n")
+    return history
+
+
+def write_repository_chart(repositories, history):
     os.makedirs(ASSETS_DIR, exist_ok=True)
-    items = sorted(
-        repositories,
-        key=lambda repo: (repo.get("stargazers_count", 0), repo.get("updated_at", "")),
-        reverse=True,
-    )[:5]
-    width, height = 760, max(190, 100 + len(items) * 43)
-    max_stars = max((repo.get("stargazers_count", 0) for repo in items), default=0) or 1
+    width, height = 760, 260
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
-        '<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090909"/><stop offset="1" stop-color="#251014"/></linearGradient><linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7f1d1d"/><stop offset="1" stop-color="#ff3030"/></linearGradient></defs>',
-        '<rect width="100%" height="100%" rx="18" fill="url(#bg)" stroke="#4b171d"/>',
-        '<text x="28" y="38" fill="#ffffff" font-family="Arial,sans-serif" font-size="19" font-weight="700">TOP REPOSITORIES</text>',
-        '<text x="28" y="60" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="11">Ranked by stars, then last update</text>',
+        '<rect width="100%" height="100%" rx="14" fill="#0b0b0d" stroke="#292929"/>',
+        '<text x="28" y="34" fill="#ffffff" font-family="Arial,sans-serif" font-size="18" font-weight="700">STAR HISTORY</text>',
+        '<text x="28" y="54" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="11">Total stars across public projects · daily snapshots</text>',
     ]
-    if not items:
-        parts.append('<text x="28" y="110" fill="#d4d4d8" font-family="Arial,sans-serif" font-size="14">No public repositories found</text>')
+    if not history:
+        parts.append('<text x="28" y="120" fill="#d4d4d8" font-family="Arial,sans-serif" font-size="14">History will appear after the first snapshot.</text>')
     else:
-        for index, repo in enumerate(items):
-            y = 91 + index * 43
-            name = repo.get("name", "Repository")
-            if len(name) > 24:
-                name = name[:21] + "..."
-            stars = repo.get("stargazers_count", 0)
-            bar_width = 390 * stars / max_stars if stars else 3
-            parts.extend([
-                f'<text x="28" y="{y + 12}" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="12">{svg_text(name)}</text>',
-                f'<rect x="250" y="{y}" width="390" height="14" rx="7" fill="#292126"/>',
-                f'<rect x="250" y="{y}" width="{bar_width:.2f}" height="14" rx="7" fill="url(#bar)"/>',
-                f'<text x="720" y="{y + 12}" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">★ {stars}</text>',
-            ])
+        values = [int(point.get("stars", 0)) for point in history]
+        low, high = min(values), max(values)
+        span = max(high - low, 1)
+        left, right, top, bottom = 42, 718, 84, 205
+        points = []
+        for i, value in enumerate(values):
+            x = left if len(values) == 1 else left + i * (right - left) / (len(values) - 1)
+            y = bottom - ((value - low) / span) * (bottom - top)
+            points.append((x, y))
+        # Add a subtle grid and a filled area under the curve.
+        for grid_y in (top, (top + bottom) / 2, bottom):
+            parts.append(f'<line x1="{left}" y1="{grid_y:.1f}" x2="{right}" y2="{grid_y:.1f}" stroke="#292929" stroke-dasharray="3 5"/>')
+        line = " ".join(f"{x:.1f},{y:.1f}" for x, y in points)
+        area = f"{left},{bottom} " + line + f" {right},{bottom}"
+        parts.append(f'<polygon points="{area}" fill="#ef4444" opacity="0.12"/>')
+        parts.append(f'<polyline points="{line}" fill="none" stroke="#ff4545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>')
+        x, y = points[-1]
+        parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="#ff4545" stroke="#ffffff" stroke-width="2"/>')
+        parts.append(f'<text x="{left}" y="232" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="11">{svg_text(history[0].get("date", ""))}</text>')
+        parts.append(f'<text x="{right}" y="232" text-anchor="end" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="11">{svg_text(history[-1].get("date", ""))}</text>')
+        parts.append(f'<text x="{right}" y="77" text-anchor="end" fill="#ffffff" font-family="Arial,sans-serif" font-size="13" font-weight="700">{values[-1]} stars</text>')
+        if len(history) < 2:
+            parts.append('<text x="380" y="250" text-anchor="middle" fill="#777777" font-family="Arial,sans-serif" font-size="10">The curve will become meaningful as daily snapshots accumulate.</text>')
     parts.append("</svg>")
-    with open(os.path.join(ASSETS_DIR, "repository-stats.svg"), "w", encoding="utf-8", newline="\n") as file:
-        file.write("\n".join(parts))
-
+    with open(os.path.join(ASSETS_DIR, "repository-stats.svg"), "w", encoding="utf-8", newline="\\n") as file:
+        file.write("\\n".join(parts))
 
 def build_markdown(profile, repositories, languages):
     stars = sum(repo.get("stargazers_count", 0) for repo in repositories)
