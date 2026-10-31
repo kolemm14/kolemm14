@@ -52,21 +52,21 @@ I learn by building projects and solving practical problems.
 
 **Most used languages:** `Rust`, `Python`, `JavaScript`, `WGSL`, `Shell`, `C`
 
-<img src="assets/language-stats.svg" alt="Language usage chart" width="100%" />
+<img src="assets/language-stats.svg" alt="Language distribution chart" width="100%" />
 
-<img src="assets/repository-stats.svg" alt="Most starred repositories chart" width="100%" />
+<img src="assets/repository-stats.svg" alt="Top repositories by stars chart" width="100%" />
 
 </div>
 
-### Featured repositories
+### Selected repositories
 
 | Repository | Description | Stars |
 |:--|:--|:--:|
-| [Debian-Hyprland-Custom](https://github.com/kolemm14/Debian-Hyprland-Custom) | A customizable Debian desktop. | 5 |
-| [effect-craft-lite-windows](https://github.com/kolemm14/effect-craft-lite-windows) | Effect Craft Lite for Windows. | 0 |
-| [effect-craft-lite-linux](https://github.com/kolemm14/effect-craft-lite-linux) | Effect Craft Lite for Linux. | 0 |
+| [**Debian-Hyprland-Custom**](https://github.com/kolemm14/Debian-Hyprland-Custom) | No description provided. | 5 |
+| [**effect-craft-lite-windows**](https://github.com/kolemm14/effect-craft-lite-windows) | No description provided. | 0 |
+| [**effect-craft-lite-linux**](https://github.com/kolemm14/effect-craft-lite-linux) | No description provided. | 0 |
 
-<sub>Statistics updated automatically by GitHub Actions.</sub>
+<sub>Last updated: 2026-10-31 20:25 UTC</sub>
 <!-- PROFILE-STATS:END -->
 
 ## Contact
