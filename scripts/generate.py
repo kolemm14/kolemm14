@@ -128,9 +128,9 @@ def record_star_history(repositories):
 
     # Keep one year of daily observations for a compact, useful chart.
     history = history[-365:]
-    with open(history_path, "w", encoding="utf-8", newline="\\n") as file:
+    with open(history_path, "w", encoding="utf-8", newline="\n") as file:
         json.dump(history, file, indent=2)
-        file.write("\\n")
+        file.write("\n")
     return history
 
 
@@ -170,7 +170,7 @@ def write_repository_chart(repositories, history):
         if len(history) < 2:
             parts.append('<text x="380" y="250" text-anchor="middle" fill="#777777" font-family="Arial,sans-serif" font-size="10">The curve will become meaningful as daily snapshots accumulate.</text>')
     parts.append("</svg>")
-    with open(os.path.join(ASSETS_DIR, "repository-stats.svg"), "w", encoding="utf-8", newline="\\n") as file:
+    with open(os.path.join(ASSETS_DIR, "repository-stats.svg"), "w", encoding="utf-8", newline="\n") as file:
         file.write("\\n".join(parts))
 
 def build_markdown(profile, repositories, languages):
