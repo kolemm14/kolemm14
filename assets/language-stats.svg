@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="358" viewBox="0 0 760 358">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090909"/><stop offset="1" stop-color="#251014"/></linearGradient></defs>
+<rect width="100%" height="100%" rx="18" fill="url(#bg)" stroke="#4b171d"/>
+<text x="28" y="38" fill="#ffffff" font-family="Arial,sans-serif" font-size="19" font-weight="700">LANGUAGE DISTRIBUTION</text>
+<text x="28" y="60" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="11">Based on byte counts from up to 30 recently updated repositories</text>
+<text x="28" y="103" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">Rust</text>
+<rect x="210" y="91" width="390" height="14" rx="7" fill="#292126"/>
+<rect x="210" y="91" width="390.00" height="14" rx="7" fill="#ff3030"/>
+<text x="720" y="103" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">84.7%</text>
+<text x="28" y="146" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">Python</text>
+<rect x="210" y="134" width="390" height="14" rx="7" fill="#292126"/>
+<rect x="210" y="134" width="27.99" height="14" rx="7" fill="#e34f26"/>
+<text x="720" y="146" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">6.1%</text>
+<text x="28" y="189" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">JavaScript</text>
+<rect x="210" y="177" width="390" height="14" rx="7" fill="#292126"/>
+<rect x="210" y="177" width="25.19" height="14" rx="7" fill="#b91c1c"/>
+<text x="720" y="189" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">5.5%</text>
+<text x="28" y="232" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">WGSL</text>
+<rect x="210" y="220" width="390" height="14" rx="7" fill="#292126"/>
+<rect x="210" y="220" width="10.86" height="14" rx="7" fill="#ff6b6b"/>
+<text x="720" y="232" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">2.4%</text>
+<text x="28" y="275" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">Shell</text>
+<rect x="210" y="263" width="390" height="14" rx="7" fill="#292126"/>
+<rect x="210" y="263" width="3.94" height="14" rx="7" fill="#8b5cf6"/>
+<text x="720" y="275" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">0.9%</text>
+<text x="28" y="318" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">C</text>
+<rect x="210" y="306" width="390" height="14" rx="7" fill="#292126"/>
+<rect x="210" y="306" width="2.74" height="14" rx="7" fill="#64748b"/>
+<text x="720" y="318" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">0.6%</text>
+</svg>
