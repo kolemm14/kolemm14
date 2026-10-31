@@ -47,10 +47,14 @@ def get_repositories():
             break
         page += 1
 
+    
     return [
         repo for repo in repositories
-        if not repo.get("fork", False)\n        and not repo.get("archived", False)\n        and repo.get("name", "").lower() != USERNAME.lower()
+        if not repo.get("fork", False)
+        and not repo.get("archived", False)
+        and repo.get("name", "").lower() != USERNAME.lower()
     ]
+
 
 
 def get_language_totals(repositories):
