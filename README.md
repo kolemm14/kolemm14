@@ -76,7 +76,25 @@ I learn by building real projects, exploring system internals and experimenting 
 ## <img src="https://img.shields.io/badge/05-GITHUB_OVERVIEW-B91C1C?style=flat-square" />
 
 <!-- PROFILE-STATS:START -->
-*GitHub data is being prepared by the automatic profile updater.*
+<div align="center">
+
+| Public repositories | Stars earned | Forks | Followers |
+|:--:|:--:|:--:|:--:|
+| **6** | **5** | **0** | **1** |
+
+**Most used languages:** `Rust`, `Python`, `JavaScript`, `WGSL`, `Shell`, `C`
+
+</div>
+
+### Selected repositories
+
+| Repository | Description | Stars |
+|:--|:--|:--:|
+| [**Debian-Hyprland-Custom**](https://github.com/kolemm14/Debian-Hyprland-Custom) | No description provided. | 5 |
+| [**effect-craft-lite-windows**](https://github.com/kolemm14/effect-craft-lite-windows) | No description provided. | 0 |
+| [**effect-craft-lite-linux**](https://github.com/kolemm14/effect-craft-lite-linux) | No description provided. | 0 |
+
+<sub>Last updated: 2026-10-31 19:58 UTC</sub>
 <!-- PROFILE-STATS:END -->
 
 <sub>Statistics are refreshed automatically by GitHub Actions. No external statistics cards or contribution graphs are used.</sub>
