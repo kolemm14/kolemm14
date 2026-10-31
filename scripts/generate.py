@@ -264,7 +264,8 @@ def main():
     languages = get_language_totals(repositories)
 
     write_language_chart(languages)
-    write_repository_chart(repositories)
+    history = record_star_history(repositories)
+    write_repository_chart(repositories, history)
     update_readme(build_markdown(profile, repositories, languages))
 
 
