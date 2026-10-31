@@ -30,21 +30,24 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Update text statistics
+      - name: Validate Python syntax
+        run: python -m py_compile scripts/generate.py
+
+      - name: Generate statistics and SVG charts
         env:
           GITHUB_USERNAME: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate.py
 
-      - name: Commit README if changed
+      - name: Commit README and charts if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+actions@users.noreply.github.com"
-          git add README.md
+          git add README.md assets/language-stats.svg assets/repository-stats.svg
 
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update profile statistics"
+            git commit -m "chore: update profile statistics and charts"
             git push
           else
-            echo "No README changes detected."
+            echo "No README or chart changes detected."
           fi
