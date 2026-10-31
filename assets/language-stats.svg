@@ -3,28 +3,28 @@
 <text x="28" y="34" fill="#ffffff" font-family="Arial,sans-serif" font-size="18" font-weight="700">LANGUAGES USED</text>
 <text x="28" y="54" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="11">Share of detected code across public repositories</text>
 <circle cx="150" cy="151" r="58" fill="none" stroke="#292929" stroke-width="22"/>
-<circle cx="150" cy="151" r="58" fill="none" stroke="#ff3030" stroke-width="22" stroke-dasharray="305.09 59.34" stroke-dashoffset="-0.00" transform="rotate(-90 150 151)"/>
-<circle cx="270" cy="90" r="5" fill="#ff3030"/>
+<circle cx="150" cy="151" r="58" fill="none" stroke="#FF3B30" stroke-width="22" stroke-dasharray="305.09 59.34" stroke-dashoffset="-0.00" transform="rotate(-90 150 151)"/>
+<circle cx="270" cy="90" r="5" fill="#FF3B30"/>
 <text x="284" y="94" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">Rust</text>
 <text x="720" y="94" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">83.7%</text>
-<circle cx="150" cy="151" r="58" fill="none" stroke="#e34f26" stroke-width="22" stroke-dasharray="21.89 342.53" stroke-dashoffset="-305.09" transform="rotate(-90 150 151)"/>
-<circle cx="270" cy="118" r="5" fill="#e34f26"/>
+<circle cx="150" cy="151" r="58" fill="none" stroke="#00C2FF" stroke-width="22" stroke-dasharray="21.89 342.53" stroke-dashoffset="-305.09" transform="rotate(-90 150 151)"/>
+<circle cx="270" cy="118" r="5" fill="#00C2FF"/>
 <text x="284" y="122" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">Python</text>
 <text x="720" y="122" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">6.0%</text>
-<circle cx="150" cy="151" r="58" fill="none" stroke="#b91c1c" stroke-width="22" stroke-dasharray="19.70 344.72" stroke-dashoffset="-326.98" transform="rotate(-90 150 151)"/>
-<circle cx="270" cy="146" r="5" fill="#b91c1c"/>
+<circle cx="150" cy="151" r="58" fill="none" stroke="#FFD60A" stroke-width="22" stroke-dasharray="19.70 344.72" stroke-dashoffset="-326.98" transform="rotate(-90 150 151)"/>
+<circle cx="270" cy="146" r="5" fill="#FFD60A"/>
 <text x="284" y="150" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">JavaScript</text>
 <text x="720" y="150" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">5.4%</text>
-<circle cx="150" cy="151" r="58" fill="none" stroke="#ff6b6b" stroke-width="22" stroke-dasharray="8.49 355.93" stroke-dashoffset="-346.68" transform="rotate(-90 150 151)"/>
-<circle cx="270" cy="174" r="5" fill="#ff6b6b"/>
+<circle cx="150" cy="151" r="58" fill="none" stroke="#30D158" stroke-width="22" stroke-dasharray="8.49 355.93" stroke-dashoffset="-346.68" transform="rotate(-90 150 151)"/>
+<circle cx="270" cy="174" r="5" fill="#30D158"/>
 <text x="284" y="178" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">WGSL</text>
 <text x="720" y="178" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">2.3%</text>
-<circle cx="150" cy="151" r="58" fill="none" stroke="#8b5cf6" stroke-width="22" stroke-dasharray="3.08 361.34" stroke-dashoffset="-355.18" transform="rotate(-90 150 151)"/>
-<circle cx="270" cy="202" r="5" fill="#8b5cf6"/>
+<circle cx="150" cy="151" r="58" fill="none" stroke="#BF5AF2" stroke-width="22" stroke-dasharray="3.08 361.34" stroke-dashoffset="-355.18" transform="rotate(-90 150 151)"/>
+<circle cx="270" cy="202" r="5" fill="#BF5AF2"/>
 <text x="284" y="206" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">Shell</text>
 <text x="720" y="206" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">0.8%</text>
-<circle cx="150" cy="151" r="58" fill="none" stroke="#64748b" stroke-width="22" stroke-dasharray="6.17 358.26" stroke-dashoffset="-358.26" transform="rotate(-90 150 151)"/>
-<circle cx="270" cy="230" r="5" fill="#64748b"/>
+<circle cx="150" cy="151" r="58" fill="none" stroke="#FF9F0A" stroke-width="22" stroke-dasharray="6.17 358.26" stroke-dashoffset="-358.26" transform="rotate(-90 150 151)"/>
+<circle cx="270" cy="230" r="5" fill="#FF9F0A"/>
 <text x="284" y="234" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">Other</text>
 <text x="720" y="234" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">1.7%</text>
 <text x="150" y="149" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="16" font-weight="700">13</text>
