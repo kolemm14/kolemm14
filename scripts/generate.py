@@ -19,7 +19,7 @@ ASSETS_DIR = os.path.join(ROOT, "assets")
 START = "<!-- PROFILE-STATS:START -->"
 END = "<!-- PROFILE-STATS:END -->"
 
-COLORS = ["#ff3030", "#e34f26", "#b91c1c", "#ff6b6b", "#8b5cf6", "#64748b"]
+COLORS = ["#FF3B30", "#00C2FF", "#FFD60A", "#30D158", "#BF5AF2", "#FF9F0A", "#64D2FF", "#FF375F"]
 
 
 def github_get(url):
