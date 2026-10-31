@@ -75,35 +75,58 @@ def svg_text(value):
 
 
 def write_language_chart(languages):
+    """Write a compact donut chart with a clear legend for profile visitors."""
+    import math
+
     os.makedirs(ASSETS_DIR, exist_ok=True)
-    items = languages.most_common(6)
-    width, height = 760, max(190, 100 + len(items) * 43)
-    total = sum(value for _, value in items) or 1
+    ranked = languages.most_common()
+    if len(ranked) > 5:
+        items = ranked[:5]
+        items.append(("Other", sum(value for _, value in ranked[5:])))
+    else:
+        items = ranked
+
+    total = sum(value for _, value in items)
+    width, height = 760, 260
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
-        '<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090909"/><stop offset="1" stop-color="#251014"/></linearGradient></defs>',
-        '<rect width="100%" height="100%" rx="18" fill="url(#bg)" stroke="#4b171d"/>',
-        '<text x="28" y="38" fill="#ffffff" font-family="Arial,sans-serif" font-size="19" font-weight="700">LANGUAGE DISTRIBUTION</text>',
-        '<text x="28" y="60" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="11">Based on byte counts from up to 30 recently updated repositories</text>',
+        '<rect width="100%" height="100%" rx="14" fill="#0b0b0d" stroke="#292929"/>',
+        '<text x="28" y="34" fill="#ffffff" font-family="Arial,sans-serif" font-size="18" font-weight="700">LANGUAGES USED</text>',
+        '<text x="28" y="54" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="11">Share of detected code across public repositories</text>',
     ]
-    if not items:
-        parts.append('<text x="28" y="110" fill="#d4d4d8" font-family="Arial,sans-serif" font-size="14">No language data available yet</text>')
+
+    if not items or total == 0:
+        parts.append('<text x="28" y="120" fill="#d4d4d8" font-family="Arial,sans-serif" font-size="14">No language data available yet</text>')
     else:
+        cx, cy, radius = 150, 151, 58
+        circumference = 2 * math.pi * radius
+        parts.append(f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="none" stroke="#292929" stroke-width="22"/>')
+        offset = 0.0
         for index, (name, value) in enumerate(items):
-            y = 91 + index * 43
-            percent = value / total * 100
-            bar_width = 390 * value / max(v for _, v in items)
+            share = value / total
+            dash = circumference * share
             color = COLORS[index % len(COLORS)]
+            parts.append(
+                f'<circle cx="{cx}" cy="{cy}" r="{radius}" fill="none" stroke="{color}" '
+                f'stroke-width="22" stroke-dasharray="{dash:.2f} {circumference - dash:.2f}" '
+                f'stroke-dashoffset="{-offset:.2f}" transform="rotate(-90 {cx} {cy})"/>'
+            )
+            offset += dash
+
+            y = 94 + index * 28
             parts.extend([
-                f'<text x="28" y="{y + 12}" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">{svg_text(name)}</text>',
-                f'<rect x="210" y="{y}" width="390" height="14" rx="7" fill="#292126"/>',
-                f'<rect x="210" y="{y}" width="{bar_width:.2f}" height="14" rx="7" fill="{color}"/>',
-                f'<text x="720" y="{y + 12}" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">{percent:.1f}%</text>',
+                f'<circle cx="270" cy="{y - 4}" r="5" fill="{color}"/>',
+                f'<text x="284" y="{y}" fill="#f4f4f5" font-family="Arial,sans-serif" font-size="13">{svg_text(name)}</text>',
+                f'<text x="720" y="{y}" text-anchor="end" fill="#e4e4e7" font-family="Arial,sans-serif" font-size="12">{share * 100:.1f}%</text>',
             ])
+        parts.extend([
+            f'<text x="{cx}" y="{cy - 2}" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="16" font-weight="700">{len(ranked)}</text>',
+            f'<text x="{cx}" y="{cy + 16}" text-anchor="middle" fill="#a1a1aa" font-family="Arial,sans-serif" font-size="10">languages</text>',
+        ])
+
     parts.append("</svg>")
     with open(os.path.join(ASSETS_DIR, "language-stats.svg"), "w", encoding="utf-8", newline="\n") as file:
         file.write("\n".join(parts))
-
 
 def record_star_history(repositories):
     """Persist a daily snapshot so the chart can show real change over time."""
