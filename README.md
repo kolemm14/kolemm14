@@ -82,7 +82,7 @@ I learn by building real projects, exploring system internals and experimenting 
 |:--:|:--:|:--:|:--:|
 | **6** | **5** | **0** | **1** |
 
-**Most used languages:** `Rust`, `Python`, `JavaScript`, `WGSL`, `Shell`, `C`
+**Most used languages:** `Rust`, `Python`, `JavaScript`, `WGSL`, `C`, `Shell`
 
 <img src="assets/language-stats.svg" alt="Language distribution chart" width="100%" />
 
@@ -98,7 +98,7 @@ I learn by building real projects, exploring system internals and experimenting 
 | [**effect-craft-lite-windows**](https://github.com/kolemm14/effect-craft-lite-windows) | No description provided. | 0 |
 | [**effect-craft-lite-linux**](https://github.com/kolemm14/effect-craft-lite-linux) | No description provided. | 0 |
 
-<sub>Last updated: 2026-11-01 13:38 UTC</sub>
+<sub>Last updated: 2026-11-01 22:10 UTC</sub>
 <!-- PROFILE-STATS:END -->
 
 ## <img src="https://img.shields.io/badge/06-CONNECT-B91C1C?style=flat-square" />
